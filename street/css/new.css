@@ -1,0 +1,500 @@
+body {
+    background-color: whitesmoke;
+    /* overflow-x: hidden; */
+}
+
+#body-id {
+    position: relative;
+}
+
+/* header */
+#alert-id {
+    margin-top: 74px;
+}
+
+#sticky {
+    position: fixed;
+    top: 0vh;
+    left: 0vh;
+    z-index: 99999999999999;
+}
+
+@media screen and (min-width: 992px) {
+    #alert-id {
+        order: -1;
+        margin-top: 0;
+    }
+
+    #sticky {
+        position: relative;
+    }
+}
+
+.navbar {
+    background-color: white
+}
+
+/* 顯示 | 的位置 */
+.nav-divider {
+    border-right: 1px solid gainsboro;
+    height: 22px;
+    display: block
+}
+
+/* main */
+/* 輪播牆-按鈕 */
+.arrow-icon-carousel {
+    background-color: rgba(255, 255, 255);
+    color: #6c757d;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    width: 34px;
+    height: 34px;
+}
+
+@media screen and (min-width: 992px) {
+    .arrow-icon-carousel {
+        background-color: rgba(255, 255, 255);
+        color: #6c757d;
+        border-radius: 50%;
+        border: 1px solid gainsboro;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* Song of the Day & 即時熱門 */
+.myCard {
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 5px gainsboro;
+}
+
+.text-date {
+    margin: 0 auto;
+    font-size: 1rem;
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: relative;
+    line-height: 1
+}
+
+/* 控制 / 的位置 */
+.text-date::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 1px;
+    border-bottom: 1px solid gainsboro;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 18px;
+    left: -6px
+}
+
+/*控制span跟爸爸的位置*/
+.text-date span {
+    position: absolute
+}
+
+/* 控制10的位置 */
+.text-date span:last-child {
+    right: 0;
+    bottom: 0
+}
+
+/* 控制 11/10 的位置 */
+.text-date-item h2 .text-date {
+    float: right;
+    top: -3px
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    display: none;
+}
+
+.wrap:hover .content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #000;
+    opacity: 0.5;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.song-lg:hover .content {
+    display: flex;
+    position: absolute;
+    transform: translateX(64px);
+}
+
+.img-wrap-adv {
+    width: 100%;
+    height: 100%;
+}
+
+.adv-close {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 0%;
+}
+
+.btn-circle {
+    padding: 4px 12px;
+    border-radius: 50%;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background-color: #fff;
+}
+
+.hot {
+    width: 200px;
+    height: 80px;
+    align-items: center;
+}
+
+.hot:hover .content {
+    display: flex;
+    position: absolute;
+    transform: translateX(-124px);
+}
+
+.li-hot-one {
+    background-color: whitesmoke;
+    border: 0;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 10px;
+}
+
+.li-hot-two {
+    background-color: whitesmoke;
+    border: 0;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .li-hot-one {
+        padding: 8px 10px 8px 15px;
+    }
+
+    .li-hot-two {
+        padding: 0px 15px;
+    }
+}
+
+.numb {
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horiz-bar {
+    border-right: 3px solid #6c757d;
+    border-radius: 50px;
+    height: 15px;
+    transform: translate(-10px, 0px) rotate(90deg);
+    align-self: center;
+}
+
+.wrap-hot {
+    position: relative;
+    margin-right: 12px;
+}
+
+.wrap-hot:hover .content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-hot {
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.text-truncate-hot {
+    width: 180px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@media screen and (min-width: 992px) {
+    .text-truncate-hot {
+        width: 350px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+}
+
+.icon-two {
+    height: 34px;
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    line-height: 4px;
+}
+
+.icon-two:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.bd-box {
+    box-sizing: border-box;
+    width: 82px;
+}
+
+/* 最新徵選 */
+.height-two {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.text-truncate {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.height-three {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.arrow-icon {
+    background-color: rgba(255, 255, 255);
+    color: #6c757d;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    width: 34px;
+    height: 34px;
+}
+
+/* 近期活動 */
+.near-jpg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.btn-near {
+    max-width: 160px;
+    height: 28px;
+    margin-right: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    background-color: white;
+}
+
+/* 大家都在聽 */
+.wrap-everybody {
+    position: relative;
+}
+
+.img-everybody {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.content-everybody {
+    display: none;
+}
+
+.wrap-everybody:hover .content-everybody {
+    width: 35%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    background: #000;
+    opacity: 0.5;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 達人首選 */
+.myCard-two {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.bg-goup-1 {
+    width: 100%;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        url('/images/expert1.jpeg')center center no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 30PX;
+}
+
+.bg-goup-2 {
+    width: 100%;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)70%),
+        url('/images/expert2.jpeg')center center no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 30PX;
+}
+
+.bg-goup-3 {
+    width: 100%;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)60%),
+        linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)60%),
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)60%),
+        linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)60%),
+        url('/images/expert3.jpeg')center center no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 30PX;
+}
+
+.height-seven {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.img-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+/* 街聲推薦 */
+.img-wrap-three {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 推薦歌單 */
+.wrap-three {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wrap-three:hover .content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #000;
+    opacity: 0.5;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 播放器 */
+#play-id {
+    position: fixed;
+    bottom: 0vh;
+    right: 5vh;
+    z-index: 99999999999999;
+}
+
+.play-bg {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgb(0, 0, 0, 0.1);
+    padding: 12px;
+    border: solid 1px rgba(255, 255, 255, .1);
+}
+
+/* footer */
+.run-cat {
+    width: 20px;
+    margin-top: -28px;
+    animation: cat 2s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cat {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .run-cat {
+        width: 20px;
+        margin-top: -28px;
+        animation: cat 5s linear;
+        animation-iteration-count: infinite;
+    }
+}
