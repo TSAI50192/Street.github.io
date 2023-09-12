@@ -354,7 +354,7 @@ body {
 
 .wrap-everybody:hover .content-everybody {
     width: 35%;
-    aspect-ratio: 1/1;
+    height: 100%;
     border-radius: 10px;
     background: #000;
     opacity: 0.5;
@@ -476,7 +476,7 @@ body {
 .run-cat {
     width: 20px;
     margin-top: -28px;
-    animation: cat 2s linear;
+    animation: cat 5s linear;
     animation-iteration-count: infinite;
 }
 
@@ -494,7 +494,7 @@ body {
     .run-cat {
         width: 20px;
         margin-top: -28px;
-        animation: cat 5s linear;
+        animation: cat 10s linear;
         animation-iteration-count: infinite;
     }
 }
