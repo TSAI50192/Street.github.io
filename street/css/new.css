@@ -3,42 +3,132 @@ body {
     /* overflow-x: hidden; */
 }
 
+a {
+    color: initial;
+    text-decoration: none;
+}
+
 #body-id {
     position: relative;
 }
 
 /* header */
-#alert-id {
-    margin-top: 74px;
-}
-
-#sticky {
-    position: fixed;
+header #sticky {
     top: 0vh;
     left: 0vh;
     z-index: 99999999999999;
 }
-
+header .sticky-fixed {
+    position: fixed;
+}
+header #alert-id {
+    font-size: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+header #alert-id .btn-close {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 @media screen and (min-width: 992px) {
-    #alert-id {
-        order: -1;
-        margin-top: 0;
+header #alert-id {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 0;
+}
+header #sticky {
+    position: relative;
+}
+}
+header nav {
+    height: 100px;
+}
+header .navbar-toggler {
+    border: 0;
+}
+header .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+        box-shadow: none;
+}
+header .offcanvas {
+    background-color: rgb(51, 51, 51);
+}
+header .offcanvas-end {
+    width: 300px;
+}
+header .offcanvas-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+}
+header .offcanvas-header a {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    padding: 5px 90px;
+}
+header .offcanvas-body {
+    padding: 0;
+}
+header li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+header .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 20px;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+header .navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+@media screen and (min-width: 992px) {
+    header .navbar-light .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 500;
+        padding: 8px 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: grid;
+        place-items: center; /* 垂直和水平置中 */
+        height: 100%;
     }
-
-    #sticky {
-        position: relative;
+    header .navbar-light .navbar-nav .nav-link:hover {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    header .navbar-light .navbar-nav .nav-link.active {
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 500;
+    }
+    header .navbar-light .navbar-nav .nav-link.active:hover {
+        color: rgba(0, 0, 0, 0.8);
     }
 }
-
-.navbar {
-    background-color: white
+header .nav-divider {
+    display: grid;
+    place-items: center; /* 垂直和水平置中 */
+    padding: 0 14px;
 }
-
-/* 顯示 | 的位置 */
-.nav-divider {
-    border-right: 1px solid gainsboro;
-    height: 22px;
-    display: block
+header .nav-divider > div {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    height: 50%;
+    margin: 0;
+}
+header .navbar-light .navbar-nav .loging .nav-link {
+    color: #fff;
+    background-color: rgb(249, 89, 95);
+    border-radius: 10px;
 }
 
 /* main */

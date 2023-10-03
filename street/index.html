@@ -16,6 +16,114 @@
             <header
                 class="container-fluid overflow-hidden d-flex flex-column p-0"
             >
+                <nav
+                    id="sticky"
+                    class="navbar navbar-light navbar-expand-lg bg-light w-100"
+                >
+                    <div class="container">
+                        <a class="row navbar-brand" href="#"
+                            ><img
+                                src="./svg/logo-sv-b.svg"
+                                alt=""
+                                width="165"
+                                height="20"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="offcanvas offcanvas-end row"
+                            tabindex="-1"
+                            id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel"
+                        >
+                            <div class="offcanvas-header">
+                                <a href="#">登入 / 註冊</a>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav flex-grow-1">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#"
+                                            >發現</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">排行榜</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">歌單</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">徵選</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >演出活動</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">App</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >音樂人指南</a
+                                        >
+                                    </li>
+                                    <li class="nav-item nav-divider">
+                                        <div class="d-none d-xl-block"></div>
+                                    </li>
+                                    <li class="nav-item d-none d-xl-block">
+                                        <a class="nav-link" href="#">派歌</a>
+                                    </li>
+                                    <li class="nav-item d-none d-xl-block">
+                                        <a class="nav-link" href="#">吹音樂</a>
+                                    </li>
+                                </ul>
+
+                                <ul
+                                    class="navbar-nav d-none d-lg-flex justify-content-end"
+                                >
+                                    <li>
+                                        <button class="btn nav-link">
+                                            <img
+                                                src="./svg/search.svg"
+                                                alt=""
+                                                width="20"
+                                                height="20"
+                                            />
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            ><img
+                                                src="./svg/cloud-arrow-up.svg"
+                                                alt=""
+                                                width="28"
+                                                height="28"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="loging">
+                                        <a class="nav-link" href="#"
+                                            >登入 / 註冊</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
                 <!-- 建議 -->
                 <div
                     id="alert-id"
@@ -32,167 +140,6 @@
                         data-bs-dismiss="alert"
                         aria-label="Close"
                     ></button>
-                </div>
-
-                <div id="sticky" class="container-fluid">
-                    <div class="row">
-                        <nav class="navbar navbar-expand-xl navbar-light p-3">
-                            <div class="container px-2 px-lg-4">
-                                <a class="navbar-brand" href="#">
-                                    <img
-                                        src="./svg/logo-sv-b.svg"
-                                        alt=""
-                                        width="165"
-                                        height="20"
-                                    />
-                                </a>
-
-                                <!-- 手機版的search & Toggle -->
-                                <div>
-                                    <a
-                                        class="text-decoration-none text-secondary me-2 d-xl-none"
-                                        href="#"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="26"
-                                            height="26"
-                                            fill="currentColor"
-                                            class="bi bi-search"
-                                            viewBox="0 0 16 16"
-                                        >
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                                            />
-                                        </svg>
-                                    </a>
-
-                                    <button
-                                        class="navbar-toggler"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#navbarNav"
-                                        aria-controls="navbarNav"
-                                        aria-expanded="false"
-                                        aria-label="Toggle navigation"
-                                    >
-                                        <span
-                                            class="navbar-toggler-icon"
-                                        ></span>
-                                    </button>
-                                </div>
-
-                                <div
-                                    class="collapse navbar-collapse justify-content-between"
-                                >
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >發現</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >排行榜</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >歌單</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >徵選</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >演出活動</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">App</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >音樂人指南</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <div class="nav-link">
-                                                <span
-                                                    class="nav-divider"
-                                                ></span>
-                                            </div>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >派歌</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"
-                                                >吹音樂</a
-                                            >
-                                        </li>
-                                    </ul>
-
-                                    <div class="navbar-nav align-items-center">
-                                        <a class="nav-link me-1" href="#"
-                                            ><svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="26"
-                                                height="26"
-                                                fill="currentColor"
-                                                class="bi bi-search"
-                                                viewBox="0 0 16 16"
-                                            >
-                                                <path
-                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                                                />
-                                            </svg>
-                                        </a>
-
-                                        <a class="nav-link me-2" href="#"
-                                            ><svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="36"
-                                                height="36"
-                                                fill="currentColor"
-                                                class="bi bi-cloud-arrow-up"
-                                                viewBox="0 0 16 16"
-                                            >
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z"
-                                                />
-                                                <path
-                                                    d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
-                                                />
-                                            </svg>
-                                        </a>
-
-                                        <button
-                                            type="button"
-                                            class="btn btn-danger rounded-3"
-                                        >
-                                            登入 / 註冊
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
                 </div>
             </header>
 
@@ -5641,12 +5588,13 @@
                     </div>
                 </div>
             </footer>
-
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-                crossorigin="anonymous"
-            ></script>
         </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/javascript.js"></script>
     </body>
 </html>
