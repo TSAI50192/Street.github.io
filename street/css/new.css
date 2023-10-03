@@ -1,6 +1,6 @@
 body {
     background-color: whitesmoke;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 a {
@@ -340,11 +340,17 @@ header .navbar-light .navbar-nav .loging .nav-link {
 }
 
 .text-truncate-hot {
-    width: 180px;
+    width: 120px;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
+}
+
+@media screen and (min-width: 350px) {
+    .text-truncate-hot {
+        width: 180px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -566,7 +572,7 @@ header .navbar-light .navbar-nav .loging .nav-link {
 .run-cat {
     width: 20px;
     margin-top: -28px;
-    animation: cat 5s linear;
+    animation: cat 3s linear;
     animation-iteration-count: infinite;
 }
 
@@ -584,7 +590,7 @@ header .navbar-light .navbar-nav .loging .nav-link {
     .run-cat {
         width: 20px;
         margin-top: -28px;
-        animation: cat 10s linear;
+        animation: cat 5s linear;
         animation-iteration-count: infinite;
     }
 }
